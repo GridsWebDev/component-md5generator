@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online MD5 Hash Generator & SHA1 Hash Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="MD5, SHA1, SHA256, MD5 Hash Calculator, MD5 Checker, MD5 Creator, MD5 Encoder, MD5 Converter, MD5 
+Checksum Verifier, Generate MD5, Create MD5, Compute MD5, Calculate MD5"
+    />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/home_md5.js"></script>
+    <script type="text/javascript" src="js/home_sha1.js"></script>
+    <script type="text/javascript" src="js/home_sha256.js"></script>
+    <script type="text/javascript" src="js/crypto.js"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="LogoImg" class="logo">
+      </div>
+
+      <div id="ADbtm">
+        <script type="text/javascript">
+          google_ad_client = "ca-pub-5162651395794188";
+          google_ad_slot = "9314335569";
+          google_override_format = true;
+          google_ad_width = 970;
+          google_ad_height = 90;
+        </script>
+        <!-- GIFCreatorBtm2 -->
+        <script
+          type="text/javascript"
+          src="//pagead2.googlesyndication.com/pagead/show_ads.js"
+        ></script>
+      </div>
+
+      <div id="MD5StringDiv" class="fieldset margintop10px">
+        <div class="legend redBackground">
+          <div class="IcoSprite IcoText"></div>
+          MD5 & SHA1 Hash Generator For Text
+        </div>
+
+        <div class="tips_text tips_text1">
+          <div id="result">Generate the hash of the string you input.</div>
+
+          <textarea id="texts" rows="2" cols="20" onkeyup="v3X_();"></textarea>
+
+          <div id="file_info">
+            <div id="checksum_type2" class="line">
+              <div class="lineLeft">Checksum type:</div>
+              <div class="lineRight">
+                <label
+                  ><input
+                    type="radio"
+                    class="radiobtn"
+                    name="checksum_type_2"
+                    id="md52"
+                    value="0"
+                    checked="true"
+                    onclick="v3X_();"
+                  />MD5</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    class="radiobtn marginleft6px"
+                    name="checksum_type_2"
+                    id="sha12"
+                    value="1"
+                    onclick="v3X_();"
+                  />SHA1</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    class="radiobtn marginleft6px"
+                    name="checksum_type_2"
+                    id="sha2562"
+                    value="2"
+                    onclick="v3X_();"
+                  />SHA-256</label
+                >
+              </div>
+            </div>
+
+            <div id="text_checksum" class="line">
+              <div class="lineLeft">String hash:</div>
+              <input
+                type="text"
+                class="hash_string_text"
+                id="hash_string3"
+                onclick="SelectAll('hash_string3');"
+              />
+            </div>
+          </div>
+          <!--end textinfo-->
+
+          <div id="Buttons">
+            <input
+              class="Btn"
+              type="button"
+              id="CalcHashForTexts"
+              onclick="v3X_();"
+              value="Calculate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/calc.js"></script>
+    <!-- Piwik -->
+    <!-- End Piwik Code -->
+  </body>
+</html>
